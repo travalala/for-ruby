@@ -1,0 +1,120 @@
+#button-add {
+    background-color: rgb(64, 118, 71);
+    color: white;
+}
+
+.todoList {
+    position: relative;
+    width: 500px;
+    min-height: 280px;
+    display: inline-block;
+    margin: 1em;
+    /*padding-top: 8px;*/
+    text-align: center;
+    /*-moz-box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.22);*/
+    /*box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.22);*/
+    background-color: white;
+    vertical-align: top;
+    border: 0px;
+    padding: 0px;
+}
+
+    .todoList:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-width: 24px 476px 38px 24px;
+        border-style: solid;
+        border-color: rgb(64, 118, 171);
+        background-color: rgb(64, 118, 171);
+    }
+
+    .todoList header {
+        background-color: rgb(64, 118, 171);
+        color: white;
+        border: 10px solid rgb(64, 118, 171);
+        z-index: auto;
+    }
+
+    .todoList header input, .todoList header input:focus,
+    .todoList ul input, .todoList ul input:focus, .addTodo {
+        font-family: 'Bradley Hand ITC';
+        outline: none;
+    }
+
+    .todoList header input {
+        margin: 0;
+        border: none;
+        background: none;
+        text-align: center;
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    .todoList ul {
+        list-style: none;
+        padding: 0 0 0 12px;
+        margin: 0;
+    }
+
+    .addTodo {
+        padding: 0;
+        margin-left: 25px;
+        display: block;
+        background-color: rgb(128, 128, 128);
+        color: #999;
+    }
+
+    .todoList input[type=text], .addTodo {
+        width: 85%;
+        border: none;
+        background: none;
+    }
+
+    .todoList input[disabled] {
+        color: #666;
+        text-decoration: line-through;
+    }
+
+    .some {
+        background-color: rgb(128, 128, 128);
+        min-height: 50px;
+        padding-top: 15px;
+    }
+
+    .insome {
+        background-color: white;
+       margin-left: 20px;
+       margin-right: 10px;
+    }
+    .todoList a {
+        color: silver;
+        text-decoration: none;
+        font: .8em verdana;
+    }
+
+        .todoList a.deletelist {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: silver;
+            color: white;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+
+.todoItemInput::-ms-clear {
+    display: none;
+}
+
+.todoList .specialheader {
+    color: white;
+}
